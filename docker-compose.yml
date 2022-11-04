@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  vue:
+    build:
+      context: "vue/"
+    image: vue-app
+    env_file:
+      - "./vue/.env"
+    ports:
+      - 6000:3000
